@@ -1,7 +1,7 @@
 const axios = require('axios');
 const http = require('http');
 
-const WEBHOOK_URL = '너의 웹훅 주소를 여기 붙여넣기';
+const WEBHOOK_URL = 'https://discord.com/api/webhooks/1382727180081168456/ovdPi1XN2d80MxTePGGLk32ZjLKJaW4NCS5m7y08rmgKnOFsQPMgvNHBTh7ZGsiu0mjP';
 const CHECK_INTERVAL = 60 * 1000; // 60초
 let notified = false;
 
