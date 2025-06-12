@@ -1,12 +1,13 @@
+
 {
-  "name": "maple-server-monitor",
+  "name": "maple-watcher",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "node-fetch": "^2.6.7"
+    "axios": "^1.6.8"
   }
 }
