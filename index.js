@@ -69,3 +69,12 @@ checkServers();
 
 // 간단한 웹서버 (알림 끄기, 테스트 등 향후 추가 가능)
 app.get('/',
+const http = require('http');
+
+// 이 코드는 웹서버를 열어서 Render가 꺼뜨리지 않게 유지하는 역할이야.
+http.createServer((req, res) => {
+  res.writeHead(200);
+  res.end('서버 모니터링 도구가 실행 중입니다.');
+}).listen(process.env.PORT || 3000, () => {
+  console.log('웹서버가 실행되었습니다.');
+});
